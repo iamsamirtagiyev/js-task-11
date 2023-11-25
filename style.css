@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    background: #252525;
+    transition: all .5s ease;
+}
+.feedback{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.feedback img{
+    width: 50px;
+}
+.feedback span{
+    font-size: 25px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.eyes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.eye-white{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background: #fff;
+}
+
+.eye-black{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: #000;
+    animation: eye 3s ease-in-out infinite;
+}
+
+@keyframes eye {
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: 50%;
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+.emoji{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.emoji .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item span{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.emoji img{
+    width: 150px;
+    filter: saturate(0);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.emoji img:hover{
+    filter: saturate(1);
+}
+
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+button:hover{
+    box-shadow: 0 0 10px #fff;
+}
